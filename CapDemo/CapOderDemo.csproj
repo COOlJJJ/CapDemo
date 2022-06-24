@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="DotNetCore.CAP" Version="3.1.2" />
+	  <PackageReference Include="DotNetCore.CAP.RabbitMQ" Version="3.1.2" />
+	  <PackageReference Include="DotNetCore.CAP.SqlServer" Version="3.1.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderService\CapOrderService.csproj" />
+  </ItemGroup>
+
+
+</Project>
